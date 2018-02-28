@@ -3,7 +3,7 @@ Feature: Index page
   In order to visit the site
   I want to be able to visit a landing page
 
-  Scenario: User visit landing page
+  Scenario: User visit index page
     Given I visit the index page
     Then I should see 'Euphony'
-    And I should 'a music theme generator'
+    And I should see 'a music theme generator'
