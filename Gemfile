@@ -14,6 +14,7 @@ gem 'turbolinks', '~> 5'
 
 
 group :development, :test do
+  gem 'coveralls', require: false
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara', '~> 2.13'
