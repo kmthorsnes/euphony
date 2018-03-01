@@ -15,6 +15,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'rspotify'
 
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'cucumber-rails', require: false
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'dotenv-rails'
 end
 
 group :development do
