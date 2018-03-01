@@ -3,7 +3,8 @@ class IndexController < ApplicationController
   end
 
   def search
-    @results = Listing.search params[:search]
+    @result
   end
+
 
 end
