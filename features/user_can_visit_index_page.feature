@@ -8,4 +8,4 @@ Feature: Index page
     Then I should see 'Euphony'
     And I should see 'a music theme generator'
     And I should see 'How are you feeling today?'
-    Then I click the button 'happy'
+    Then I click the button 'Happy'
