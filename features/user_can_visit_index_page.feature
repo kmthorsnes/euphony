@@ -9,3 +9,5 @@ Feature: Index page
     And I should see 'a music theme generator'
     And I should see 'How are you feeling today?'
     Then I click the button 'Happy'
+    And I should see 'Enter a song you like to listen to when you feel this way'
+    Then I click the button 'Search'
