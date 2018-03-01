@@ -5,6 +5,6 @@
 
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Enter a song you like to listen to when you feel this way:") %>
-  <%= text_field_tag(:q) %>
+  <%= text_field_tag(:field) %>
   <%= submit_tag("Search") %>
 <% end %>

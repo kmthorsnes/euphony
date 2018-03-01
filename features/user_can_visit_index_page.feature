@@ -10,5 +10,5 @@ Feature: Index page
     And I should see 'How are you feeling today?'
     Then I click the button 'Happy'
     And I should see 'Enter a song you like to listen to when you feel this way'
-    Then I should fill in 'search' with 'Oxford comma'
+    Then I should fill in 'field' with 'Oxford comma'
     Then I click the button 'Search'
