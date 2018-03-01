@@ -10,6 +10,6 @@
 <% end %>
 <% if @results %>
   <% @results.each do |track| %>
-  <h1><%= track.name %></h1>
+  <h3><%= track.name %> - <%= track.artists.first.name %> - <%= track.external_urls %> </h3>
   <% end %>
 <% end %>

@@ -9,4 +9,3 @@ Feature: Music search
     And I should see 'Enter a song you like to listen to when you feel this way:'
     Then I should fill in 'query' with 'Oxford comma'
     Then I click the button 'Search'
-    Then show me the page
