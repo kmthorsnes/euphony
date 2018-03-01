@@ -29,6 +29,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'dotenv-rails'
+  gem 'launchy'
 end
 
 group :development do

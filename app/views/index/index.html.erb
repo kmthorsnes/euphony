@@ -3,8 +3,13 @@
 <p>How are you feeling today?</p>
 <button type="button" class="btn btn-secondary">Happy</button>
 
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Enter a song you like to listen to when you feel this way:") %>
-  <%= text_field_tag(:field) %>
-  <%= submit_tag("Search") %>
+<%= form_with url: search_path do |form| %>
+  <%= form.label :query, 'Enter a song you like to listen to when you feel this way:' %>
+  <%= form.text_field :query %>
+  <%= form.submit value: 'Search' %>
+<% end %>
+<% if @results %>
+  <% @results.each do |track| %>
+  <h1><%= track.name %></h1>
+  <% end %>
 <% end %>

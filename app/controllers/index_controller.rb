@@ -3,8 +3,9 @@ class IndexController < ApplicationController
   end
 
   def search
-    @result
+    binding.pry
+    RSpotify.authenticate(ENV['SpotifyClientID'],ENV['SpotifyClientSecret'])
+    @results = RSpotify::Track.search(params[:query])
+    render :index
   end
-
-
 end
