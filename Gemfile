@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'rspotify'
 
 group :development, :test do
   gem 'coveralls', require: false
