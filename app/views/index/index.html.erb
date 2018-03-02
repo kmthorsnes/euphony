@@ -8,8 +8,9 @@
   <%= form.text_field :query %>
   <%= form.submit value: 'Search' %>
 <% end %>
-<% if @results %>
-  <% @results.each do |track| %>
-  <h1><%= track.name %></h1>
+
+<% if @recommendations %>
+  <% @recommendations.track.each do |track| %>
+  <h1><%= track.name %></> <h1><%= track.artist %> </>
   <% end %>
 <% end %>
