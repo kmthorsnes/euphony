@@ -5,10 +5,8 @@ Feature: Visitor can register
 
     Background:
         Given I am on the index page
-        Background:
-    Given the following user exists
-    | name  |  email        | password    | password_confirmation |
-    | oskar | oskar@quad.se | password123 | password123           |
+            | name  |  email        | password    | password_confirmation |
+            | oskar | oskar@quad.se | password123 | password123           |
 
     Scenario: Visitor can navigate to registration page
         When I click "Register"
