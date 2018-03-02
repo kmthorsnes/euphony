@@ -10,8 +10,8 @@ Then("I click the button {string}") do |element|
   click_link_or_button element
 end
 
-Then("I should fill in {string} with {string}") do |field, song|
-  fill_in field, with: song
+Then("I should fill in {string} with {string}") do |query, song|
+  fill_in query, with: song
 end
 
 Then("show me the page") do
