@@ -163,7 +163,6 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-
     oauth2 (1.4.0)
       faraday (>= 0.8, < 0.13)
       jwt (~> 1.0)
@@ -322,8 +321,8 @@ DEPENDENCIES
   coveralls
   cucumber-rails
   database_cleaner
-  dotenv-rails
   devise
+  dotenv-rails
   factory_bot_rails
   jquery-rails
   launchy

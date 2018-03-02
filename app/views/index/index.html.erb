@@ -11,8 +11,9 @@
 
 <% if @recommendations %>
   <% @recommendations.tracks.each do |track| %>
-  <h1><%= track.name %></> </h1>
-  <p><%= track.artists.first.name %></p>
-  <%= link_to 'Listen', track.external_urls['spotify'] %>
+    <h1><%= track.name %></> </h1>
+    <p><%= track.artists.first.name %></p>
+    <%= link_to 'Listen', track.external_urls['spotify'] %>
 
   <% end %>
+<% end %>
