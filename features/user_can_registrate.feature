@@ -19,4 +19,9 @@ Feature: Visitor can register
         Then I should be redirected to 'index' page
         And I should see the message "Welcome! You have signed up successfully"
 
-    
+
+    Scenario: User fills in all fields expecpt Email [Sad Path]
+        Given I fill in "Password" with "holahoop"
+        And I fill in "Password confirmation" with "holahoop"
+        And I click "Sign up"
+        Then I should see "1 error prohibited this user from being saved: Email can't be blank"
