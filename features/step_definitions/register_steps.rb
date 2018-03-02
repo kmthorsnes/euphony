@@ -1,17 +1,13 @@
 Given("I am on the index page") do |table|
-  visit '/'
-end
-
-When("I click {string}") do |link|
- click_link_or_button link
+  visit root_path
 end
 
 Then("I should be redirected to {string} page") do |page|
-    visit registration_path
+    visit new_user_registration_path
 end
 
-When("I fill in {string} with {string}") do |field, input|
-    fill_in feild, with: input
+When("I fill in {string} with {string}") do |q, input|
+    fill_in q, with: input
 end
 
 Then("I should see the message {string}") do |content|
