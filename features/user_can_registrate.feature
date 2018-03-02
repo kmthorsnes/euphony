@@ -5,11 +5,11 @@ Feature: Visitor can register
 
     Background:
         Given I am on the index page
-            | name  |  email        | password    | password_confirmation |
+            | name  | email        | password    | password_confirmation |
             | oskar | oskar@quad.se | password123 | password123           |
 
     Scenario: Visitor can navigate to registration page
-        When I click "Register"
+        When I click "Register" 
         Then I should be redirected to "Registration" page
 
     Scenario: User can register
