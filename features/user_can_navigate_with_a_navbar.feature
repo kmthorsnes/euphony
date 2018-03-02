@@ -10,4 +10,4 @@ I would like to see a navbar with a home button
     And I should see 'Register'
     And I should see 'Log in'
     When I click "Euphony"
-    Then I should be redirected to the landing page
+    Then I should be redirected to 'index' page

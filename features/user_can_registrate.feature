@@ -18,3 +18,5 @@ Feature: Visitor can register
         And I click "Sign up"
         Then I should be redirected to 'index' page
         And I should see the message "Welcome! You have signed up successfully"
+
+    
