@@ -30,6 +30,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'dotenv-rails'
   gem 'launchy'
+  gem 'omniauth-spotify'
 end
 
 group :development do
