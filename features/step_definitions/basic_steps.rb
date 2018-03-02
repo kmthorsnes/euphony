@@ -15,9 +15,9 @@ Then("I should be redirected to {string} page") do |page_name|
 end
 
 def page_path_from(page_name)
-   case page_name.downcase
+  case page_name.downcase
    when 'registration'
-       new_user_registration_path
+      new_user_registration_path
    else
       root_path
   end
