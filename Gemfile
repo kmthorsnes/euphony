@@ -17,6 +17,7 @@ gem 'rspotify'
 gem 'devise'
 gem 'omniauth-spotify'
 
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'cucumber-rails', require: false
