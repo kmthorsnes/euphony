@@ -12,3 +12,8 @@ rescue NameError
 end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
+
+Before do
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new(OmniAuthFixtures.spotify_response)
+end

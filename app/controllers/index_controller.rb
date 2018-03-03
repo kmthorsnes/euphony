@@ -3,8 +3,10 @@ class IndexController < ApplicationController
   end
 
   def search
-    RSpotify.authenticate(ENV['SpotifyClientID'],ENV['SpotifyClientSecret'])
-    @results =  RSpotify::Track.search(params[:query], limit: 5)
+    RSpotify.authenticate(ENV['SPOTIFY_CLIENT_ID'],ENV['SPOTIFY_CLIENT_SECRET'])
+    results = RSpotify::Track.search(params[:query])
+    id = results.first.id
+    @recommendations = RSpotify::Recommendations.generate(seed_tracks: [id])
     render :index
   end
 end

@@ -2,14 +2,20 @@
 <p>a music theme generator</p>
 <p>How are you feeling today?</p>
 <button type="button" class="btn btn-secondary">Happy</button>
+<button type="button" class="btn btn-secondary">Mellow</button>
+<button type="button" class="btn btn-secondary">Sad</button>
 
 <%= form_with url: search_path do |form| %>
   <%= form.label :query, 'Enter a song you like to listen to when you feel this way:' %>
   <%= form.text_field :query %>
   <%= form.submit value: 'Search' %>
 <% end %>
-<% if @results %>
-  <% @results.each do |track| %>
-  <h3><%= track.name %> - <%= track.artists.first.name %> - <%= track.external_urls %> </h3>
+
+<% if @recommendations %>
+  <% @recommendations.tracks.each do |track| %>
+  <h1><%= track.name %> </h1>
+  <p><%= track.artists.first.name %></p>
+  <%= link_to 'Listen to a song preview', track.preview_url %>
+  <%= link_to 'Listen to album on Spotify', track.external_urls['spotify'] %>
   <% end %>
 <% end %>
