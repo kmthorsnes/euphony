@@ -13,9 +13,6 @@
 
 <% if @recommendations %>
   <% @recommendations.tracks.each do |track| %>
-  <h1><%= track.name %> </h1>
-  <p><%= track.artists.first.name %></p>
-  <%= link_to 'Listen to a song preview', track.preview_url %>
-  <%= link_to 'Listen to album on Spotify', track.external_urls['spotify'] %>
+  <iframe src="https://open.spotify.com/embed/track/<%= track.id %>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   <% end %>
 <% end %>

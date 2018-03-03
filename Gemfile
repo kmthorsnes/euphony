@@ -15,7 +15,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'rspotify'
 gem 'devise'
-
+gem 'omniauth-spotify'
 
 group :development, :test do
   gem 'coveralls', require: false
@@ -31,7 +31,6 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'dotenv-rails'
   gem 'launchy'
-  gem 'omniauth-spotify'
 end
 
 group :development do
