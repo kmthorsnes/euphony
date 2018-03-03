@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
     <title>Euphony</title>
     <%= csrf_meta_tags %>
 
@@ -10,6 +12,10 @@
   <body>
 
 <%= render 'partials/navbar' %>
+<% if flash[:notice] %>
+   <%= flash[:notice] %>
+<% end %>
+
 <%= yield %>
 
     <% if flash[:notice] %>
