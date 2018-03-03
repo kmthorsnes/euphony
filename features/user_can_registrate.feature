@@ -19,7 +19,6 @@ Feature: Visitor can register
       Then I should be redirected to 'index' page
       And I should see the message "Welcome! You have signed up successfully"
 
-
     Scenario: Visitor fills in all fields expect Email [Sad Path]
       Given I fill in "Password" with "holahoop"
       And I fill in "Password confirmation" with "holahoop"
