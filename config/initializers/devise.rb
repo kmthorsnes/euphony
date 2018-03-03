@@ -13,4 +13,6 @@ Devise.setup do |config|
    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
    config.reset_password_within = 6.hours
    config.sign_out_via = :delete
+   config.omniauth :spotify, ENV['SPOTIFY_CLIENT_ID'], ENV['SPOTIFY_CLIENT_SECRET'],
+    scope: 'playlist-read-private user-read-private user-read-email'
 end

@@ -13,7 +13,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'rspotify'
 gem 'devise'
+
 
 group :development, :test do
   gem 'coveralls', require: false
@@ -27,7 +29,9 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'dotenv-rails'
   gem 'launchy'
+  gem 'omniauth-spotify'
 end
 
 group :development do

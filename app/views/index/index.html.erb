@@ -1,3 +1,19 @@
 <h1>Euphony</h1>
 <p>a music theme generator</p>
-    
+<p>How are you feeling today?</p>
+<button type="button" class="btn btn-secondary">Happy</button>
+
+<%= form_with url: search_path do |form| %>
+  <%= form.label :query, 'Enter a song you like to listen to when you feel this way:' %>
+  <%= form.text_field :query %>
+  <%= form.submit value: 'Search' %>
+<% end %>
+
+<% if @recommendations %>
+  <% @recommendations.tracks.each do |track| %>
+    <h1><%= track.name %></> </h1>
+    <p><%= track.artists.first.name %></p>
+    <%= link_to 'Listen', track.external_urls['spotify'] %>
+
+  <% end %>
+<% end %>
