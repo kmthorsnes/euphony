@@ -7,4 +7,4 @@ Scenario: Visitor clicks on 'Login with Spotify' and creates and account
   Given I visit the index page
   And I click "Log in using Spotify"
   Then I should be redirected to "index" page
-  And I should see "Successfuly authenticated from Spotify account"
+  And I should see "Successfully authenticated from Spotify account"
