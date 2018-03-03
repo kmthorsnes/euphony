@@ -30,3 +30,7 @@ def page_path_from(page_name)
     root_path
   end
 end
+
+Given("I provide invalid credentials") do
+  OmniAuth.config.mock_auth[:spotify] = :invalid_credentials
+end

@@ -8,3 +8,10 @@ Scenario: Visitor clicks on 'Login with Spotify' and creates and account
   And I click "Log in using Spotify"
   Then I should be redirected to "index" page
   And I should see "Successfully authenticated from Spotify account"
+
+Scenario: Visitor fails to provide valid credentials [Sad Path]
+  Given I visit the index page
+  But I provide invalid credentials
+  And I click "Log in using Spotify"
+  Then I should be redirected to "index" page
+  And I should see "Something went wrong"
