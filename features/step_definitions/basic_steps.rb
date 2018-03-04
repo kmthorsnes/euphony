@@ -34,3 +34,7 @@ end
 Given("I provide invalid credentials") do
   OmniAuth.config.mock_auth[:spotify] = :invalid_credentials
 end
+
+Then("I should see {int} {string}") do |int, iframe|
+  expect(page).to have_selector 'iframe', count: int
+end
