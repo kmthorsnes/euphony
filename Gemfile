@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'rspotify'
 gem 'devise'
 gem 'omniauth-spotify'
+gem 'rack-cors', require: 'rack/cors'
 
 
 group :development, :test do
