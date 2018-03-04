@@ -6,6 +6,10 @@ The web application can be found here [Euphony](https://euphonyapp.herokuapp.com
 ## Description
 Small web application which make use of Spoitfy's API and let you search for songs within the app and returns song suggestion based on your search terms.
 
+### Upcomming features 
+* Music suggestion based on the users mood
+* Purchase of tickets for upcomming concerts
+
 ## Built With
 
 * [Ruby on rails](http://rubyonrails.org/) - The web-application framework used
