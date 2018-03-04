@@ -1,15 +1,24 @@
-<h1>Euphony</h1>
-<p>a music theme generator</p>
-<p>How are you feeling today?</p>
-<button type="button" class="btn btn-secondary">Happy</button>
-<button type="button" class="btn btn-secondary">Mellow</button>
-<button type="button" class="btn btn-secondary">Sad</button>
 
-<%= form_with url: search_path do |form| %>
-  <%= form.label :query, 'Enter a song you like to listen to when you feel this way:' %>
-  <%= form.text_field :query %>
-  <%= form.submit value: 'Search' %>
-<% end %>
+  <div class="euphony">
+    <h1>Euphony!</h1>
+    <p>a music theme generator</p>
+  </div>
+
+<div class="mood">
+  <p>How are you feeling today?</p>
+  <button type="button" class="btn btn-secondary">Happy</button>
+  <button type="button" class="btn btn-secondary">Mellow</button>
+  <button type="button" class="btn btn-secondary">Sad</button>
+</div>
+
+<div class="song">
+  <%= form_with url: search_path do |form| %>
+    <%= form.label :query, 'Type a song:' %>
+    <%= form.text_field :query %>
+    <%= form.submit value: 'Search' %>
+  <% end %>
+</div>
+
 
 <% if @recommendations %>
   <% @recommendations.tracks.each do |track| %>
