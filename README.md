@@ -17,7 +17,6 @@ Small web application which make us of Spoitfy's API and let you search for song
 * **Oskar** - [GitHub](https://github.com/OskarCA)
 * **Kalle** - [GitHub](https://github.com/kmthorsnes)
 
-
 ## Acknowledgments
 
 * [Moodfuse](https://moodfuse.com/) For inspiration (among others)
