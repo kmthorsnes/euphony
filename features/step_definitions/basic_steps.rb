@@ -36,5 +36,5 @@ Given("I provide invalid credentials") do
 end
 
 Then("I should see {int} {string}") do |int, iframe|
-  expect(page).to have_selector iframe, count: int
+  expect(page).to have_selector "iframe", count: int
 end
