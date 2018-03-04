@@ -4,7 +4,7 @@ Craft Academy Midcourse project application.
 The web application can be found here [Euphony](https://euphonyapp.herokuapp.com/)
 
 ## Description
-Small web application which make us of Spoitfy's API and let you search for songs within the app and returns song suggestion based on your search terms.
+Small web application which make use of Spoitfy's API and let you search for songs within the app and returns song suggestion based on your search terms.
 
 ## Built With
 
